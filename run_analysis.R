@@ -61,5 +61,5 @@ by_vars <- group_by(subData2, SubjectId, Activity)
 sumData <- summarise_each(by_vars, funs(mean))
 
 #write the data to a text file
-write.table(sumData, "FinalTidyData.csv", col.names=TRUE, row.names=FALSE, sep=",")
+write.table(sumData, "FinalTidyData.txt", col.names=TRUE, row.names=FALSE, sep=",")
 
